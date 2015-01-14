@@ -1,0 +1,27 @@
+{
+  "name": "gulpTesting",
+  "version": "1.0.1",
+  "description": "just a testing",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-autoprefixer": "^2.0.0",
+    "gulp-concat": "^2.4.3",
+    "gulp-jshint": "^1.9.0",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-minify-html": "^0.1.8",
+    "gulp-strip-debug": "^1.0.2",
+    "gulp-uglify": "^1.0.2"
+  },
+  "devDependencies": {
+    "gulp-changed": "^1.1.0",
+    "gulp-imagemin": "^2.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hello"
+  ],
+  "author": "norlihazmey",
+  "license": "MIT"
+}
