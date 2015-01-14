@@ -1,5 +1,6 @@
 /* reference website http://www.sitepoint.com/introduction-gulp-js/ */
 
+// define all gulp plugin to used
 var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var changed = require('gulp-changed');
