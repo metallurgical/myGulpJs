@@ -1,6 +1,8 @@
 /* reference website http://www.sitepoint.com/introduction-gulp-js/ */
 
 // define all gulp plugin to used
+// define plugin if required
+// some of plugins can be used together with others plugin
 var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var changed = require('gulp-changed');
@@ -15,7 +17,7 @@ var autoprefix = require('gulp-autoprefixer');
 //this plugin for debug js file, will display error and correction into console
 gulp.task('jshint', function(){
 
-	var srcJs = './src/js/*.js';
+	var srcJs = './src/js/*.js'; // js source files
 	gulp.src(srcJs)
 	    .pipe(jshint())
 	    .pipe(jshint.reporter('default'));
@@ -25,8 +27,8 @@ gulp.task('jshint', function(){
 //this function to watch images and compress images
 gulp.task('compressImage', function(){
 
-	var srcImage = './src/images/**/*';
-	var destImage = './dist/images';
+	var srcImage = './src/images/**/*'; // images sources
+	var destImage = './dist/images';    // destination sources
 
 	gulp.src(srcImage)
 		.pipe(changed(destImage))
